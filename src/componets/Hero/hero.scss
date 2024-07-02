@@ -1,0 +1,258 @@
+.hero{
+
+    box-sizing: border-box;
+    height: 85vh;
+ margin-top: 100px;
+
+ @media (max-width: 1024px){
+    height: auto;
+    margin-bottom: 70px;
+ }
+
+ @media (max-width: 1440px){
+    height: auto;
+    margin-bottom: 70px;
+ }
+ 
+ @media (max-width: 475px)  {
+
+    height: auto;
+    width: fit-content;
+    box-sizing: none;
+    margin-left: 40px;
+ }
+
+ @media (min-width: 475px) and (max-width: 768px) {
+    height: auto;
+    width: fit-content;
+    box-sizing: none;
+    margin-left: 40px;
+    
+ }
+
+
+
+    
+
+
+
+    .arrowbtn{
+        position: absolute;
+
+        right: 0;
+        bottom: 0;
+        
+        .arrow{
+            height: 250px;
+            width: 250px;
+            margin-left: -50px;
+        }
+
+        @media (max-width: 475px) {
+            display: none;
+        }
+
+        @media (min-width: 475px) and (max-width: 768px){
+            display: none;
+        }
+    }
+
+
+    .cars {
+        position: absolute;
+        bottom: 0;
+       
+
+        .car{
+            height: 100px;
+        }
+    }
+
+
+   
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+        margin-top: 60px;
+
+        @media (max-width: 1440px){
+            gap: 0;
+            padding: 0 20px;
+        }
+
+        @media (max-width: 1024px){
+
+            gap: 0;
+            padding: 0 20px;
+       
+            margin-bottom: 20px;
+        }
+
+        
+ @media (max-width: 475px) {
+
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 1px;
+    padding: 0 50px;
+ }
+
+ @media (min-width: 475px) and (max-width: 768px)
+ {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 1px;
+    padding: 0 50px;
+ }
+
+      
+
+        .leftContainer{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            flex-direction: column;
+            gap: 20px;
+
+            
+ @media (max-width: 475px) {
+
+  width: fit-content;
+  margin-top: 10px;
+  padding: 0 10px;
+ }
+ @media (min-width: 475px) and (max-width: 768px){
+    width: fit-content;
+ 
+    padding: 0 10px;
+ }
+            h1 {
+                font-family: "Poppins", sans-serif;
+                font-size: 48px; 
+                font-weight: bold;
+                color: #2a2a2a;
+                margin: 10px 0;
+            }
+
+            h2 {
+                font-family: "Poppins", sans-serif;
+                font-size: 20px; 
+                color: #6b7280;
+                margin: 20px 0;
+                line-height: 1.6;
+            }
+
+            h3 {
+                font-family: "Poppins", sans-serif;
+                font-size: 16px;
+                color: #4b5563;
+            }
+
+            h4 {
+                font-family: "Poppins", sans-serif;
+                font-size: 14px;
+                color: #9ca3af;
+            }
+
+            h1 {
+
+            span {
+                font-family: "Poppins", sans-serif;
+                font-size: inherit;
+                font-weight: inherit;
+                color: #f59e0b; 
+            }
+
+        }
+
+            .contbtt{
+
+                width: 500px;
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                align-items: center;
+                margin-top: 20px;
+                
+ @media (max-width: 475px) {
+
+  gap: 40px;
+  justify-content: space-between;
+ }
+
+ 
+ @media (min-width: 475px) and (max-width: 768px){
+    gap: 40px;
+ }
+
+
+                button { height: 70px;
+                width: 200px;
+                border-radius: 20px;
+                background-color: #eda11d; 
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+            
+                a {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: black; 
+                }
+
+                &:hover {
+                    background-color: black;
+
+                    a {
+                        color: orange;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .rightContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 10;
+
+        
+ @media (max-width: 475px) {
+
+   
+    margin-top: 20px;
+
+ }
+
+ @media (min-width: 475px) and (max-width: 768px){
+    margin-top: 20px;
+ }
+
+    }
+
+}
+}
+
+
+@media (min-width: 475px) {}
+/* sm */
+@media (max-width: 640px) {}
+
+
+/* md */
+@media (min-width: 768px) {}
+/* lg */
+@media (min-width: 1024px) {}
+
+/* xl */
+@media (min-width: 1280px) {}
+/* 2xl */
+
+@media (min-width: 1536px) {}

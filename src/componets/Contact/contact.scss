@@ -1,0 +1,189 @@
+.contact {
+    margin-top: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+
+    @media (max-width: 1027px)and (min-width  : 600px){
+        height: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+
+        @media (max-width: 1027px)and (min-width  : 600px){
+            padding:  0 20px;
+        }
+        
+        .title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            h1 {
+                font-family: "Poppins", sans-serif;
+                font-size: 48px; 
+                font-weight: bold;
+                color: #2a2a2a;
+                margin: 10px 0;
+            }
+
+            h2 {
+                font-family: "Poppins", sans-serif;
+                font-size: 20px; 
+                color: #6b7280;
+                margin: 20px 0;
+                line-height: 1.6;
+                text-align: center;
+            }
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            width: 100%;
+            padding: 20px;
+            gap: 30px;
+
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                height: 60vh;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                background-color: #fff;
+
+                @media (max-width: 1027px)and (min-width  : 600px){
+                    height: auto;
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                    gap: 20px;
+                 
+
+                    .input-style {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 15px;
+
+                        label {
+                            margin-bottom: 5px;
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+
+                        input[type="text"],
+                        input[type="email"],
+                        textarea {
+                            padding: 10px;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            font-size: 16px;
+                        }
+
+                        textarea {
+                            height: 50px;
+                        }
+                    }
+
+                    input[type="submit"] {
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 5px;
+                        background-color: #FFA500;
+                        color: white;
+                        font-size: 16px;
+                        cursor: pointer;
+                        height: 60px;
+
+                        &:hover {
+                            background-color: #e69500;
+                        }
+                    }
+                }
+            }
+
+            .information {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 60vh;
+            
+                width: 45%;
+                @media (max-width: 1027px)and (min-width  : 600px){
+                    height:400px;
+                }
+
+                @media (min-width: 600px) and (max-width: 768px){
+                    padding: 0 10px;
+                    margin-left: 20px;
+                }
+
+                .class-info {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    width: 400px;
+                    gap: 200px;
+
+                    @media (max-width: 1027px)and (min-width  : 600px){
+                        gap: 40px;
+                    }
+
+                    .icons {
+                       
+                        font-size: 24px;
+                    }
+
+                    .address {
+                        h1 {
+                            font-size: 28px;
+                            margin-bottom: 5px;
+                        }
+
+                        span {
+                            font-size: 20px;
+                            color: #6b7280;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 475px) {}
+/* sm */
+@media (min-width: 640px) {}
+
+
+/* md */
+@media (min-width: 768px) {}
+/* lg */
+@media (min-width: 1024px) {}
+
+/* xl */
+@media (min-width: 1280px) {}
+/* 2xl */
+
+@media (min-width: 1536px) {}
+}
+
+
+.btn {
+    width: 200px;
+    border-radius: 50px;
+}
